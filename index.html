@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <form action="#" id="envoieLettre">
-        <label for="lettre"> saisissez une lettre</label>
-        <input type="text" name="lettre" id="lettre">
+    <h1>Le jeu du pendu</h1>
+    <h2 id="motTrouve"></h2>
+    <main>
+        <section>
+            <button id="demarrer">jouer</button>
+            <button id="quitter">Quitter</button>
+            <article id="zoneFin"></article>
+            <article id="zoneJeu" class="hidden">
+                <label for="lettre" id="lblLettre"> saisissez une lettre</label>
+                <input type="text" name="lettre" id="lettre">
+            </article>
+            <p id="lettresUtilisees"></p>
 
-    </form>
+        </section>
+        <section>
+            <img id="imagePendu" src="/images/pendu7.png" alt="pendu complet">
+        </section>
+    </main>
 
-    <div id="erreurSaisie"></div>
+    
+
+    <div id="Message"></div>
     
     <script src="script/motmot.js"></script>
     <script src="script/main.js"></script>

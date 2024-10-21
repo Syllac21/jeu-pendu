@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+main{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    vertical-align: middle;
+}
+
+button{
+    display: block;
+}
+.hidden{
+    display: none;
+}

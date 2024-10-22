@@ -1,37 +1,41 @@
-h1{
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    width: 80%;
-}
-
-h2{
-    text-align: center;
-    width: 80%;
-}
-
-body{
-    width: 80%;
-    height: 100%;
-    margin: auto;
-}
-
-main{
-    width: 50%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-section{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    vertical-align: middle;
-}
-
-button{
-    display: block;
-}
-.hidden{
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #motTrouve {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  #zoneJeu {
+    margin-top: 20px;
+  }
+  
+  #imagePendu {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  #lettresUtilisees {
+    font-size: 1.2em;
+  }
+  
+  .hidden {
     display: none;
-}
+  }

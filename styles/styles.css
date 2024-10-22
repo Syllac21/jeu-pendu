@@ -1,14 +1,22 @@
 h1{
     text-align: center;
+    width: 80%;
 }
 
 h2{
     text-align: center;
+    width: 80%;
+}
+
+body{
+    width: 80%;
+    height: 100%;
+    margin: auto;
 }
 
 main{
-    width: 80%;
-    height: 100%;
+    width: 50%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

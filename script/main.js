@@ -43,11 +43,11 @@ function finJeu(resultat){
     clickButton.classList.remove('hidden');
     buttonQuitter.classList.remove('hidden');
     if(resultat){
-        Message.innerHTML = `Vous avez gagné en ${nbCoup} coups`;
-        listeResultats.push(nbCoup);
+        Message.innerHTML = `Vous avez gagné en ${erreurs_autorisees-erreurs_commises+1} coups`;
     }else{
-        Message.innerHTML = `Vous avez perdu en ${nbCoup} coups`;
+        Message.innerHTML = `Vous avez perdu en ${erreurs_autorisees-erreurs_commises+1} coups`;
     }
+    listeResultats.push(erreurs_autorisees-erreurs_commises+1);
 }
 function lancerjeu(){
     // je créé le mot trouvé par l'utilisateur :
@@ -130,5 +130,5 @@ const clickQuitter = buttonQuitter.addEventListener('click' , ()=>{
         
         somme += listeResultats[i];
     }
-    zoneFin.innerHTML =`Vous avez eu une moyenne de  ${Math.floor(somme/(listeResultats.length))}`;
+    zoneFin.innerHTML =`Vous avez eu une moyenne de  ${Math.floor(somme/(listeResultats.length))} avec un score minimum de ${Math.floor(...listeResultats)} coups et un score minimum ${Math.floor(...listeResultats)} coups`;
 })
